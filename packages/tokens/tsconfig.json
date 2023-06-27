@@ -1,0 +1,4 @@
+{
+    "extends": "@szr-ui/ts-config/base.json",
+    "include": ["src"]
+}

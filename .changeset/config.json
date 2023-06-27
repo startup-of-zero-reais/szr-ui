@@ -7,5 +7,5 @@
 	"access": "public",
 	"baseBranch": "main",
 	"updateInternalDependencies": "patch",
-	"ignore": ["@szr-ui/docs"]
+	"ignore": ["@startup-of-zero-reais/docs"]
 }

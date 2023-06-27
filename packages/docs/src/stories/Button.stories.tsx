@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from '@szr-ui/react'
+import { Button, ButtonProps } from '@startup-of-zero-reais/react'
 import { ArrowRight } from 'phosphor-react'
 
 export default {

@@ -1,6 +1,6 @@
 import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
-import { Heading, HeadingProps } from '@szr-ui/react'
+import { Heading, HeadingProps } from '@startup-of-zero-reais/react'
 
 export default {
 	title: 'Typography/Heading',

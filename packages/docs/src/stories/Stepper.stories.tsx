@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
-import { Stepper, StepperProps } from '@szr-ui/react'
+import { Stepper, StepperProps } from '@startup-of-zero-reais/react'
 
 export default {
 	title: 'Form/Stepper',

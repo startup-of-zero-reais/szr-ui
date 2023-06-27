@@ -1,7 +1,6 @@
 {
-  "name": "@szr-ui/react",
+  "name": "@startup-of-zero-reais/react",
   "version": "1.0.0",
-  "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,12 +10,12 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jean Molossi",
+  "license": "MIT",
   "devDependencies": {
-    "@szr-ui/eslint-config": "*",
-    "@szr-ui/tokens": "*",
-    "@szr-ui/ts-config": "*",
+    "@startup-of-zero-reais/eslint-config": "*",
+    "@startup-of-zero-reais/tokens": "*",
+    "@startup-of-zero-reais/ts-config": "*",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "react": "^18.2.0",
@@ -28,5 +27,14 @@
     "@radix-ui/react-checkbox": "^1.0.4",
     "@stitches/react": "^1.2.8",
     "phosphor-react": "^1.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startup-of-zero-reais/szr-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/startup-of-zero-reais/szr-ui/issues"
+  },
+  "homepage": "https://github.com/startup-of-zero-reais/szr-ui#readme",
+  "description": ""
 }

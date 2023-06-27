@@ -1,5 +1,5 @@
 {
-  "name": "@szr-ui/docs",
+  "name": "@startup-of-zero-reais/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -29,9 +29,9 @@
   },
   "dependencies": {
     "@storybook/addon-a11y": "^7.0.23",
-    "@szr-ui/eslint-config": "*",
-    "@szr-ui/react": "*",
-    "@szr-ui/tokens": "*",
+    "@startup-of-zero-reais/eslint-config": "*",
+    "@startup-of-zero-reais/react": "*",
+    "@startup-of-zero-reais/tokens": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",

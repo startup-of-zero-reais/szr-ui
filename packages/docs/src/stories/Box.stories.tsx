@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
-import { Box, BoxProps, Text } from '@szr-ui/react'
+import { Box, BoxProps, Text } from '@startup-of-zero-reais/react'
 
 export default {
 	title: 'Surfaces/Box',

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
-import { TextArea, TextAreaProps } from '@szr-ui/react'
+import { TextArea, TextAreaProps } from '@startup-of-zero-reais/react'
 
 export default {
 	title: 'Form/Text Area',

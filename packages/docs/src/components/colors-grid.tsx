@@ -1,5 +1,5 @@
 import React from 'react'
-import { colors } from '@szr-ui/tokens'
+import { colors } from '@startup-of-zero-reais/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

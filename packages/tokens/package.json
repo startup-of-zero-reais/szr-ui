@@ -1,5 +1,5 @@
 {
-  "name": "@szr-ui/tokens",
+  "name": "@startup-of-zero-reais/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@szr-ui/eslint-config": "*",
-    "@szr-ui/ts-config": "*",
+    "@startup-of-zero-reais/eslint-config": "*",
+    "@startup-of-zero-reais/ts-config": "*",
     "tsup": "^7.0.0",
     "typescript": "^5.1.3"
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
-import { TextInput, TextInputProps } from '@szr-ui/react'
+import { TextInput, TextInputProps } from '@startup-of-zero-reais/react'
 
 export default {
 	title: 'Form/Text Input',

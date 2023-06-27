@@ -1,6 +1,6 @@
 import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@szr-ui/react'
+import { Text, TextProps } from '@startup-of-zero-reais/react'
 
 export default {
 	title: 'Typography/Text',

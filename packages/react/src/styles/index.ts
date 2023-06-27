@@ -1,4 +1,4 @@
-import { colors, font_sizes, font_weights, fonts, line_heights, rounded, spacing } from '@szr-ui/tokens'
+import { colors, font_sizes, font_weights, fonts, line_heights, rounded, spacing } from '@startup-of-zero-reais/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {

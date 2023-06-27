@@ -17,5 +17,12 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  async viteFinal(config, { configType }) {
+	if (configType === 'PRODUCTION') {
+		config.base = '/szr-ui/'
+	}
+
+	return config
+  },
 };
 export default config;

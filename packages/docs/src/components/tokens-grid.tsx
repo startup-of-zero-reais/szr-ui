@@ -4,12 +4,13 @@ import '../styles/tokens-grid.css'
 interface TokensGridProps {
 	tokens: Record<string, string>;
 	withPx?: boolean;
-	fonts?: boolean;
+	shadowed?: boolean;
 }
 
 export function TokensGrid({
 	tokens,
 	withPx = false,
+	shadowed = false,
 }: TokensGridProps) {
 	const toPx = (value: string) => {
 		if (/.+rem$/i.exec(value)) {
@@ -31,6 +32,7 @@ export function TokensGrid({
 					<th>Name</th>
 					<th>Value</th>
 					{withPx ? <th>Pixels</th> : null}
+					{shadowed ? <th style={{ textAlign: 'center' }}>Example</th> : null}
 				</tr>
 			</thead>
 
@@ -40,6 +42,20 @@ export function TokensGrid({
 						<td>{key}</td>
 						<td>{value}</td>
 						{withPx ? <td>{toPx(value)}</td> : null}
+						{shadowed
+							? (
+								<td>
+									<div style={{
+										width: 32,
+										height: 32,
+										backgroundColor: '#efefef1A',
+										boxShadow: value,
+										border: 'none',
+										borderRadius: '999px',
+										margin: '0 auto'
+									}}></div>
+								</td>
+							) : null}
 					</tr>
 				))}
 			</tbody>

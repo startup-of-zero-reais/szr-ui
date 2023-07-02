@@ -1,5 +1,11 @@
 # @startup-of-zero-reais/react
 
+## 1.2.0
+
+### Minor Changes
+
+- 4bd5e30: Added responsitivy
+
 ## 1.1.0
 
 ### Minor Changes

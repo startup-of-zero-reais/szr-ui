@@ -1,19 +1,13 @@
-import React from 'react'
 import { ComponentProps } from '@stitches/react'
-import { DataAttrWidth } from '../styles/width-variants'
 import { styled } from '../styles'
 import { As } from '../helpers/as'
 
-const BoxComponent = styled('div', {
+export const Box = styled('div', {
 	padding: '$4',
 	borderRadius: '$md',
 	backgroundColor: '$neutral_800',
 	boxShadow: '$drop_base',
 	boxSizing: 'border-box',
-
-	'&[data-min-width]': { minWidth: 'var(--min-box-width)' },
-	'&[data-width]': { width: 'var(--box-width)' },
-	'&[data-max-width]': { maxWidth: 'var(--max-box-width)' },
 
 	variants: {
 		shadow: {
@@ -40,32 +34,6 @@ const BoxComponent = styled('div', {
 	},
 })
 
-export type BoxProps = ComponentProps<typeof BoxComponent> & As & DataAttrWidth
-
-function Box(props: BoxProps) {
-	const {
-		css = {},
-		'data-min-width': minWidth,
-		'data-width': width,
-		'data-max-width': maxWidth,
-		...rest
-	} = props
-
-	return (
-		<BoxComponent
-			data-min-width={minWidth}
-			data-width={width}
-			data-max-width={maxWidth}
-			css={{
-				'--min-box-width': minWidth,
-				'--box-width': width,
-				'--max-box-width': maxWidth,
-				...css
-			}}
-			{...rest}
-		/>
-	)
-}
+export type BoxProps = ComponentProps<typeof Box> & As
 
 Box.displayName = 'Box'
-export { Box }

@@ -31,18 +31,6 @@ export default {
 			options: ['none', 'sm', 'md', 'base', 'lg', 'xl', '2xl'],
 			description: 'shadow é uma opção para adicionar sombra ao box',
 		},
-		'data-min-width': {
-			control: 'text',
-			description: '`data-min-width` define um valor limite para a propriedade. Pode ser em `px`, `%` ou `rem`'
-		},
-		'data-width': {
-			control: 'text',
-			description: '`data-width` define um valor limite para a propriedade. Pode ser em `px`, `%` ou `rem`'
-		},
-		'data-max-width': {
-			control: 'text',
-			description: '`data-max-width` define um valor limite para a propriedade. Pode ser em `px`, `%` ou `rem`'
-		},
 	},
 } as Meta<BoxProps>
 

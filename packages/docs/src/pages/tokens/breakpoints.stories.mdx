@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/addon-docs'
 import { TokensGrid } from '../../components/tokens-grid.tsx'
 import { breakpoints } from '@startup-of-zero-reais/tokens'
+import { Grid, Text } from '@startup-of-zero-reais/react'
 
 <Meta title="Tokens/Breakpoints" />
 
@@ -9,3 +10,127 @@ import { breakpoints } from '@startup-of-zero-reais/tokens'
 Breakpoints que você pode utilizar dentro da aplicação
 
 <TokensGrid tokens={breakpoints} />
+
+# Colunas por breakpoint
+
+Abaixo você pode visualizar o grid de colunas para cada breakpoint
+
+<TokensGrid tokens={{
+	'@base': '1 coluna',
+	'@sm': `2 colunas`,
+	'@md': `4 colunas`,
+	'@lg': `6 colunas`,
+	'@xl': `12 colunas`,
+	'@2xl': `12 colunas`,
+}} />
+
+<br />
+
+---
+
+# Exemplos
+
+<br />
+
+---
+
+### Grid container
+
+Este grid terá colunas como definido em [Colunas por breakpoint](#-colunas-por-breakpoint)
+
+```jsx
+<Grid container>
+	// ...
+</Grid>
+```
+
+<Grid container>
+	<Text>Text in column 1</Text>
+	<Text>Text in column 2</Text>
+</Grid>
+
+<br />
+
+---
+
+### Grid item
+
+Este grid terá somente 1 coluna por padrão
+
+```jsx
+<Grid item>
+	// ...
+</Grid>
+```
+
+<Grid item>
+	<Text>Text in column 1</Text>
+	<Text>Text in column 2</Text>
+</Grid>
+
+<br />
+
+---
+
+### Grids container and item
+
+Nessa composição de Grids há um container e um Grid item que possui 2 colunas internas
+
+
+```jsx
+<Grid container>
+	<Grid item noGutter cols={2}>
+		// ...
+	</Grid>
+</Grid>
+```
+
+<Grid container>
+	<Grid item noGutter cols={2}>
+		<Text>Text in column 1</Text>
+		<Text>Text in column 2</Text>
+	</Grid>
+</Grid>
+
+<br />
+
+---
+
+### Grids item responsivo
+
+Nesse Grid foi definido o número de colunas por breakpoint, no exemplo o minimo é 1 coluna (`@initial`)
+e seguimos com 1 coluna para o menor breakpoint (`@sm`), porém para o breakpoint médio (`@md`) temos 2 colunas,
+e 3, 4, 6 respectivamente para os breakpoints (`@lg`, `@xl`, `@2xl`)
+
+
+```jsx
+<Grid item cols={{
+	'@initial': 1, // (min-width: 0)
+	'@sm': 1, 	// (min-width: 640px)
+	'@md': 2, 	// (min-width: 768px)
+	'@lg': 3, 	// (min-width: 1024px)
+	'@xl': 4, 	// (min-width: 1280px)
+	'@2xl': 6, 	// (min-width: 1536px)
+}}>
+	// ...
+</Grid>
+```
+
+<Grid item cols={{
+	'@initial': 1, // (min-width: 0)
+	'@sm': 1, 	// (min-width: 640px)
+	'@md': 2, 	// (min-width: 768px)
+	'@lg': 3, 	// (min-width: 1024px)
+	'@xl': 4, 	// (min-width: 1280px)
+	'@2xl': 6, 	// (min-width: 1536px)
+}}>
+	<Text>Text in column 1</Text>
+	<Text>Text in column 2</Text>
+	<Text>Text in column 3</Text>
+	<Text>Text in column 4</Text>
+</Grid>
+
+<br />
+
+---
+

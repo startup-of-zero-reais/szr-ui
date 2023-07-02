@@ -6,6 +6,12 @@ import { As } from '../helpers/as'
 export const Grid = styled(Box, {
 	display: 'grid',
 	gridTemplateColumns: '1fr',
+	gap: '$1',
+
+	'@md': { gap: '$2' },
+	'@lg': { gap: '$4' },
+	'@xl': { gap: '$5' },
+	'@2xl': { gap: '$6' },
 
 	variants: {
 		item: {
@@ -51,6 +57,11 @@ export const Grid = styled(Box, {
 			container: false,
 			cols: undefined,
 			css: { gridTemplateColumns: '1fr' }
+		},
+		{
+			// @ts-ignore
+			noGutter: true,
+			css: { gap: '$0' },
 		}
 	],
 

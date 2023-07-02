@@ -1,0 +1,2 @@
+import{A as t}from"./index.0dd01115.js";import"./index.0dbe6625.js";import"./iframe.72c79fb1.js";import"./index.079ad046.js";import"./jsx-runtime.a757349a.js";const i={title:"Data view/Avatar",component:t,args:{src:"https://github.com/jeanmolossi.png",alt:"Avatar image"},argTypes:{src:{control:{type:"text"}}}},l={},c={args:{src:void 0,alt:"Avatar fallback"}},p=["Default","WithFallback"];export{l as Default,c as WithFallback,p as __namedExportsOrder,i as default};
+//# sourceMappingURL=Avatar.stories.2b79e6ca.js.map

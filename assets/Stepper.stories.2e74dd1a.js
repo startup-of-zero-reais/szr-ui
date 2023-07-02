@@ -1,0 +1,2 @@
+import{b as r}from"./index.0dd01115.js";import"./index.0dbe6625.js";import"./iframe.72c79fb1.js";import"./index.079ad046.js";import"./jsx-runtime.a757349a.js";const i={title:"Form/Stepper",component:r,args:{size:4,currentStep:1}},m={},n={args:{size:4,currentStep:4}},a=["Primary","Full"];export{n as Full,m as Primary,a as __namedExportsOrder,i as default};
+//# sourceMappingURL=Stepper.stories.2e74dd1a.js.map

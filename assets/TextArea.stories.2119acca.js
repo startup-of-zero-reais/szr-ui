@@ -1,0 +1,2 @@
+import{c as r}from"./index.0dd01115.js";import"./index.0dbe6625.js";import"./iframe.72c79fb1.js";import"./index.079ad046.js";import"./jsx-runtime.a757349a.js";const i={title:"Form/Text Area",component:r,args:{}},m={args:{placeholder:"username"}},d={args:{disabled:!0,placeholder:"desabilitado"}},l=["Primary","Disabled"];export{d as Disabled,m as Primary,l as __namedExportsOrder,i as default};
+//# sourceMappingURL=TextArea.stories.2119acca.js.map
